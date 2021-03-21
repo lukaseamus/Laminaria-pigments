@@ -12,10 +12,10 @@
 
 library(nnls)
 # Gaussian peak coefficient file, all pigments
-gaussian.peaks <- read.table("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/gaussian.peak.parameters.txt", header = TRUE) 
+gaussian.peaks <- read.table("~/PATH/gaussian.peak.parameters.txt", header = TRUE) 
 
 # Specific absorption coefficient (sac) file including alias pigments (zea, cryp, anth)
-sac.table <- read.table("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/specific.absorption.coefficients.txt", header =T)
+sac.table <- read.table("~/PATH/specific.absorption.coefficients.txt", header =T)
 sac <- sac.table$L.g.cm
 names(sac) <- sac.table$pigment
 
