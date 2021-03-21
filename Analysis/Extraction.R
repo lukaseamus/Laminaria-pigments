@@ -6,7 +6,7 @@
 
 #### 1.    Data preparation ####
 #### 1.1   Load data ####
-E <- read.csv("~/Desktop/Plymouth University/Dissertation/Pigments/Data/Extraction.csv")
+E <- read.csv("~/PATH/Extraction.csv")
 
 #### 1.2   Rename variables ####
 wet <- E$wet # wet extraction concentration (μg gWW-1)
