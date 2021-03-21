@@ -6,7 +6,7 @@
 
 #### 1.    Data preparation ####
 #### 1.1   Load data ####
-E <- read.csv("~/Desktop/Plymouth University/Dissertation/Pigments/Data/Environmental.csv")
+E <- read.csv("~/PATH/Environmental.csv")
 
 #### 1.2   Rename variables ####
 temp <- E$temp
