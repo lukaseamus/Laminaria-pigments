@@ -25,8 +25,6 @@ ggplot() +
   geom_text(aes(x = -22.9, y = 29, label = "1000 km"), size = 5) +
   mytheme
 
-
-
 #### Clean up ####
 detach(package:rworldmap)
 detach(package:ggplot2)
