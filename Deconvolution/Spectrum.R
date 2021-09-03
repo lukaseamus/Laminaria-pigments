@@ -6,8 +6,8 @@
 
 #### 1.    Data preparation ####
 #### 1.1   Load functions and data ####
-source("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/pigment.function.R")
-s <- read.csv("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/Dry.csv", header = T)
+source("~/PATH/pigment.function.R")
+s <- read.csv("~/PATH/Dry.csv", header = T)
 s <- subset(s, wavelength >= 400 & wavelength <= 700)[, -1]
 w <- 400:700
 
