@@ -6,7 +6,7 @@
 
 #### 1.   Data preparation ####
 #### 1.1  Load data ####
-D <- read.csv("~/Desktop/Plymouth University/Dissertation/Pigments/Data/Decomposition.csv")
+D <- read.csv("~/PATH/Decomposition.csv")
 
 #### 1.2  Reorder levels of species factor ####
 D <- within(D,{
