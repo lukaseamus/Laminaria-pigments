@@ -5,9 +5,9 @@ The repository is split into two folders: **Analysis** and **Deconvolution**. Th
 
 **Analysis**
 1. `Environmental.csv`: *In situ* light and temperature data.
-                        -      *d* = day from start of experiment as an integer
-                        - *day* = day from start of experiment as a numeric
-                        - *lux* = irradiance in lumens per square metre
+    - *d* = day from start of experiment as an integer
+                        *day* = day from start of experiment as a numeric
+                        *lux* = irradiance in lumens per square metre
    `Environmental.R`: R code to analyse these data.
 2. `Decomposition.csv`: Biomass loss data.
                         *species* = *Laminaria digitata* (d), *Laminaria hyperborea* (h) or *Laminaria ochroleuca* (o)
