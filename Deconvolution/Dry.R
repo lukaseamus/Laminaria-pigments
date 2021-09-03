@@ -11,14 +11,14 @@
 # PLoS One 10, e0137645. 10.1371/journal.pone.0137645. 
 
 # Source pigment function from other R script
-source("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/pigment.function.R")
+source("~/PATH/pigment.function.R")
 pigment.objects <- ls()
 w <- 400:700
 
 # Dry spectra from kelps collected at Mount Batten + West Hoe
 # Wavelengths in one nm increments
 # Columns are replicates of different species and ages
-s <- read.csv("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/Dry.csv", header = T)
+s <- read.csv("~/PATH/Dry.csv", header = T)
 # Use wavelengths from 400-700 nm
 s <- subset(s, wavelength >= 400 & wavelength <= 700)[, -1]
 head(s)
@@ -44,5 +44,4 @@ mg.L <- pigment.concentration(fit, pathl = z)
 ug.g  <- sweep(mg.L, 2, 25 / 0.1, "*") # --> ug pigment / g dry tissue
 
 # Write concentrations to csv file
-write.csv(ug.g, "~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/dry.pigments.csv")
-
+write.csv(ug.g, "~/PATH/dry.pigments.csv")
