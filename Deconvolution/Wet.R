@@ -10,14 +10,14 @@
 # method for analysis of algal pigment mixtures by spectral deconvolution. 
 # PLoS One 10, e0137645. 10.1371/journal.pone.0137645. 
 
-source("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/pigment.function.R")
+source("~/PATH/pigment.function.R")
 pigment.objects <- ls()
 w <- 400:700
 
 # Wet spectra of kelps collected at Mount Batten 
 # Wavelengths in one nm increments
 # Columns are replicates of different species and individuals
-s <- read.csv("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/Wet.csv", header = T)
+s <- read.csv("~/PATH/Wet.csv", header = T)
 # Use wavelengths from 400-700 nm
 s <- subset(s, wavelength >= 400 & wavelength <= 700)[, -1]
 head(s)
@@ -40,11 +40,10 @@ z = 1
 mg.L <- pigment.concentration(fit, pathl = z)
 
 # Read sample weights
-mass <- read.csv("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/wet.mass.csv", header = T)
+mass <- read.csv("~/PATH/wet.mass.csv", header = T)
 
 # Samples weighed ~1 g (see wet.mass.csv) and extraction volume at 25 ml; dilution is 1.
 ug.g  <- sweep(mg.L, 2, 25 / mass$g, "*") # --> ug pigment / g dry tissue
 
 # Write concentrations to csv file
-write.csv(ug.g, "~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/wet.pigments.csv")
-
+write.csv(ug.g, "~/PATH/wet.pigments.csv")
