@@ -6,7 +6,7 @@
 
 #### 1.    Data preparation ####
 #### 1.1   Load data ####
-P <- read.csv("~/Desktop/Plymouth University/Dissertation/Pigments/Data/Pigments.csv")
+P <- read.csv("~/PATH/Pigments.csv")
 
 #### 1.2   Reorder levels of species factor ####
 P <- within(P,{
@@ -879,4 +879,3 @@ detach(package:ggplot2)
 rm(list = ls())
 graphics.off()
 cat("\014")
-
