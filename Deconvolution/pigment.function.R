@@ -12,10 +12,10 @@
 
 library(nnls)
 # Gaussian peak coefficient file, all pigments
-gaussian.peaks <- read.table("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/gaussian.peak.parameters.txt", header = TRUE) 
+gaussian.peaks <- read.table("~/PATH/gaussian.peak.parameters.txt", header = TRUE) 
 
 # Specific absorption coefficient (sac) file including alias pigments (zea, cryp, anth)
-sac.table <- read.table("~/Desktop/Plymouth University/Dissertation/Pigments/Deconvolution/specific.absorption.coefficients.txt", header =T)
+sac.table <- read.table("~/PATH/specific.absorption.coefficients.txt", header =T)
 sac <- sac.table$L.g.cm
 names(sac) <- sac.table$pigment
 
@@ -210,27 +210,4 @@ coefficients <- sapply(m$m, coef)
 	mg.L.extract <- sweep(pigment.absorption, 1, 1000 / sac[colnames(m$X)[(m$k + 2):nrow(coefficients)]], "*")
 }
 	return(mg.L.extract)	
-} 
-
-
-# Example 
-#w <- 400:700
-#y <- read.table("COMSAT abs spec.txt", header = T)
-#y <- subset(y, wl >= 400 & wl <= 700)[,-1]
-
-# M <- pigment.fit(w, y)
-# names(M)
-
-#fit.spec <- fitted.spectrum(M)
-#matplot(w, fit.spec, type = "l")
-
-#bg.fitted.spec <- background.spectrum(M)
-#matplot(w, bg.fitted.spec, type = "l")
-
-#pigment.fitted.spec <- pigment.spectrum(M)
-#matplot(w, pigment.fitted.spec, type = "l")
-
-#pigment.concentration(M, pathl = 1)
-
-
-
+}
