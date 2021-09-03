@@ -4,24 +4,21 @@ This repository contains data and R code accompanying article 10.3354/meps13886 
 The repository is split into two folders: **Analysis** and **Deconvolution**. The former contains all files to perform the statitsical analysis. The latter contains all files to perform the spectral deconvolution adapted from 10.1371/journal.pone.0137645. Below is a description of each file within those folders.
 
 **Analysis**
-1. `Environmental.csv`: *In situ* light and temperature data.
+1. `Environmental.csv`/`Environmental.R`: *In situ* light and temperature data.
     - *d* = day from start of experiment as an integer
     - *day* = day from start of experiment as a numeric
     - *lux* = irradiance in lumens per square metre
-   `Environmental.R`: R code to analyse these data.
-2. `Decomposition.csv`: Biomass loss data.
+2. `Decomposition.csv`/`Decomposition.R`: Biomass loss data.
     - *species* = *Laminaria digitata* (d), *Laminaria hyperborea* (h) or *Laminaria ochroleuca* (o)
     - *bag* = ID of galvanised steel mesh bag
     - *age* = detrital age in days
     - *loss* = biomass loss per day (%)
-   `Decomposition.R`: R code to analyse these data.
-3. `Extraction.csv`: Comparison of pigment extraction from fresh and lyophilised tissue.
+3. `Extraction.csv`/`Extraction.R`: Comparison of pigment extraction from fresh and lyophilised tissue.
     - *id* = sample ID
     - *pigment* = Chlorophll *a*, Chlorophyll *c* or Carotenoids
     - *wet* = fresh extract pigment concentration
     - *dry* = lyophilised extract pigment concentration
-   `Extraction.R`: R code to analyse these data.
-4. `Pigments.csv`: Main pigment data.
+4. `Pigments.csv`/`Pigments.R`: Main pigment data.
     - *id* = sample ID
     - *site* = Mount Batten (MB) or West Hoe (WH)
     - *species* = *Laminaria digitata* (d), *Laminaria hyperborea* (h) or *Laminaria ochroleuca* (o)
@@ -35,7 +32,6 @@ The repository is split into two folders: **Analysis** and **Deconvolution**. Th
     - *Phe.a* = Pheophytin *a*
     - *Viola* = Violaxanthin
     - *Zea* = Zeaxanthin
-   `Pigments.R`: R code to analyse these data.
 
 **Deconvolution**
 
