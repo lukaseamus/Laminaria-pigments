@@ -18,7 +18,7 @@ The repository is split into two folders: **Analysis** and **Deconvolution**. Th
     - *pigment* = Chlorophll *a*, Chlorophyll *c* or Carotenoids
     - *wet* = fresh extract pigment concentration
     - *dry* = lyophilised extract pigment concentration
-4. `Pigments.csv`/`Pigments.R`: Main pigment data.
+4. `Pigments.csv`/`Pigments.R`: Main pigment data. All pigment concentrations are given in micrograms per gram.
     - *id* = sample ID
     - *site* = Mount Batten (MB) or West Hoe (WH)
     - *species* = *Laminaria digitata* (d), *Laminaria hyperborea* (h) or *Laminaria ochroleuca* (o)
@@ -32,7 +32,22 @@ The repository is split into two folders: **Analysis** and **Deconvolution**. Th
     - *Phe.a* = Pheophytin *a*
     - *Viola* = Violaxanthin
     - *Zea* = Zeaxanthin
+5. `Map.R`: R code to plot the base map of Europe used to build Figure 1.
 
 **Deconvolution**
+1. `gaussian.peak.parameters.txt`: Gaussian peak parameters for 28 common algal pigments that determine the shape of the absorbance curve for each individual pigment (this file was left unchanged so see 10.1371/journal.pone.0137645 for details).
+2. `specific.absorption.coefficients.txt`: Customised set of core pigments to be deconvoluted from *Laminaria* spp. pigment mixture absorbance spectra (details were obtained from the literature for acetone extractions since 10.1371/journal.pone.0137645 used ethanol)
+    - *pigment* = pigment abbreviation as used in 10.1371/journal.pone.0137645
+    - *nm* = absorbance maximum or the wavelength at which absorbance is highest given in nanometres
+    - *L.g.cm* = absorption coefficient (sometimes also called the specific extinction coefficient) at the absorbance maximum given in litres per gram per centimetre
+    - *solvent* = only values for acentone were used since this was the solvent we extracted our samples with
+3. `pigment.function.R`: List of R functions required for spectral deconvolution. This file requires the above datasets.
+4. `Wet.csv`/`wet.mass.csv`/`Wet.R`: Customised R code and raw spectrophotometric data from fresh tissue extractions required to obtain estimates of individual pigment concentrations.
+    - *wavelength* = wavelength given in nanometres
+    - *d1A* etc. = sample ID
+    - *id* = sample ID
+    - *g* = fresh mass of each sample in grams
+5. `Dry.csv`/`Dry.R`: Same as above but for lyophilised tissue extraction. There is no equivalent of `wet.mass.csv` since sample weight was standardised to 100 ± 1 milligrams.
+6. `Spectrum.R`: R code to visualise the deconvolution procedure on the basis of a single lyophilised *Laminaria digitata* sample (Figure S2). 
 
-Luka Seamus Wright, 3 September 2021
+Luka Seamus Wright, 4 September 2021
