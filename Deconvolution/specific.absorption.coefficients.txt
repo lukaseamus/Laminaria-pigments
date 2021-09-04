@@ -7,4 +7,3 @@
 "6" "Fuco" 166 443 "acetone"
 "7" "Viola" 240 442 "acetone"
 "8" "Zea" 234 452 "acetone"
-
