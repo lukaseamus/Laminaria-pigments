@@ -42,7 +42,7 @@ The repository is split into two folders: **Analysis** and **Deconvolution**. Th
     - *L.g.cm* = absorption coefficient (sometimes also called the specific extinction coefficient) at the absorbance maximum given in litres per gram per centimetre
     - *solvent* = only values for acentone were used since this was the solvent we extracted our samples with
 3. `pigment.function.R`: List of R functions required for spectral deconvolution. This file requires the above datasets.
-4. `Wet.csv`|`wet.mass.csv`/`Wet.R`: Customised R code and raw spectrophotometric data from fresh tissue extractions required to obtain estimates of individual pigment concentrations.
+4. `Wet.csv`|`wet.mass.csv`|`Wet.R`: Customised R code and raw spectrophotometric data from fresh tissue extractions required to obtain estimates of individual pigment concentrations.
     - *wavelength* = wavelength given in nanometres
     - *d1A* etc. = sample ID
     - *id* = sample ID
