@@ -150,14 +150,14 @@ wdp <- ggplot(data = E, aes(log10(dry), log10(wet))) +
        geom_ribbon(aes(ymin = lower, ymax = upper, fill = pig),
                    alpha = .5) +
        scale_colour_manual(values = c("#0d98ba", "#50c878", "#ffae42"),
-                      labels = c(expression("Chlorophyll"*italic(" a")*"       log"[10]*"(y) = 1.51log"[10]*"(x) — 2.73"),
+                      labels = c(expression("Chlorophyll"*italic(" a")*"       log"[10]*"(y) = 1.51log"[10]*"(x) – 2.73"),
                                  expression("Chlorophyll"*italic(" c")*"       log"[10]*"(y) = 0.03log"[10]*"(x) + 1.13"),
-                                 expression("Carotenoids"*"         log"[10]*"(y) = 1.37log"[10]*"(x) — 2.3")),
+                                 expression("Carotenoids"*"         log"[10]*"(y) = 1.37log"[10]*"(x) – 2.3")),
                       guide = guide_legend()) +
        scale_fill_manual(values = c("#0d98ba", "#50c878", "#ffae42"),
-                      labels = c(expression("Chlorophyll"*italic(" a")*"       log"[10]*"(y) = 1.51log"[10]*"(x) — 2.73"),
+                      labels = c(expression("Chlorophyll"*italic(" a")*"       log"[10]*"(y) = 1.51log"[10]*"(x) – 2.73"),
                                  expression("Chlorophyll"*italic(" c")*"       log"[10]*"(y) = 0.03log"[10]*"(x) + 1.13"),
-                                 expression("Carotenoids"*"         log"[10]*"(y) = 1.37log"[10]*"(x) — 2.3")),
+                                 expression("Carotenoids"*"         log"[10]*"(y) = 1.37log"[10]*"(x) – 2.3")),
                       guide = guide_legend()) +
        scale_linetype_manual(values = c(1, 5, 1),
                              guide = F) +
