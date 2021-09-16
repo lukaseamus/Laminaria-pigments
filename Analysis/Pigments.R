@@ -819,12 +819,12 @@ ap <- ggplot() +
                         size = 0.5, position = position_dodge(width = 1.5)) +
         scale_colour_manual(values = c("#333b08","#81a512","#f1c700"),
                             labels = c(expression(italic("L. digitata")*"             y = 0.008x + 0.6"),
-                                       expression(italic("L. hyperborea")*"       y = —0.00009x + 0.75"),
+                                       expression(italic("L. hyperborea")*"       y = –0.00009x + 0.75"),
                                        expression(italic("L. ochroleuca")*"       y = 0.005x + 0.62")),
                             guide = guide_legend()) +
         scale_fill_manual(values = c("#333b08","#81a512","#f1c700"),
                           labels = c(expression(italic("L. digitata")*"             y = 0.008x + 0.6"),
-                                     expression(italic("L. hyperborea")*"       y = —0.00009x + 0.75"),
+                                     expression(italic("L. hyperborea")*"       y = –0.00009x + 0.75"),
                                      expression(italic("L. ochroleuca")*"       y = 0.005x + 0.62")),
                           guide = guide_legend()) +
         scale_linetype_manual(values = c(1, 5, 1),
@@ -848,14 +848,14 @@ cp <- ggplot() +
                                               ymax = mean + se, colour = group1),
                         size = 0.5, position = position_dodge(width = 1.5)) +
         scale_colour_manual(values = c("#333b08","#81a512","#f1c700"),
-                            labels = c(expression(italic("L. digitata")*"             y = —2.1x + 112.13"),
+                            labels = c(expression(italic("L. digitata")*"             y = –2.1x + 112.13"),
                                        expression(italic("L. hyperborea")*"       y = 0.04x + 92.84"),
-                                       expression(italic("L. ochroleuca")*"       y = —0.28x + 22.55")),
+                                       expression(italic("L. ochroleuca")*"       y = –0.28x + 22.55")),
                             guide = guide_legend()) +
         scale_fill_manual(values = c("#333b08","#81a512","#f1c700"),
-                          labels = c(expression(italic("L. digitata")*"             y = —2.1x + 112.13"),
+                          labels = c(expression(italic("L. digitata")*"             y = –2.1x + 112.13"),
                                      expression(italic("L. hyperborea")*"       y = 0.04x + 92.84"),
-                                     expression(italic("L. ochroleuca")*"       y = —0.28x + 22.55")),
+                                     expression(italic("L. ochroleuca")*"       y = –0.28x + 22.55")),
                           guide = guide_legend()) +
         scale_linetype_manual(values = c(1, 5, 5),
                               guide = F) +
