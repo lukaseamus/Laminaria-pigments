@@ -15,7 +15,7 @@ library(nnls)
 gaussian.peaks <- read.table("~/PATH/gaussian.peak.parameters.txt", header = TRUE) 
 
 # Specific absorption coefficient (sac) file including alias pigments (zea, cryp, anth)
-sac.table <- read.table("~/PATH/specific.absorption.coefficients.txt", header =T)
+sac.table <- read.table("~/PATH/specific.absorption.coefficients.txt", header = TRUE)
 sac <- sac.table$L.g.cm
 names(sac) <- sac.table$pigment
 
