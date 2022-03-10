@@ -13,7 +13,7 @@ The repository is split into two folders: **Analysis** and **Deconvolution**. Th
     - *bag* = ID of galvanised steel mesh bag
     - *age* = detrital age in days
     - *loss* = biomass loss per day (%)
-3. `Extraction.csv`|`Extraction.R`: Comparison of pigment extraction from fresh and lyophilised tissue.
+3. `Extraction.csv`|`Extraction.R`: Comparison of pigment extraction from fresh and lyophilised tissue. All pigment concentrations are given in micrograms per gram.
     - *id* = sample ID
     - *pigment* = Chlorophll *a*, Chlorophyll *c* or Carotenoids
     - *wet* = fresh extract pigment concentration
