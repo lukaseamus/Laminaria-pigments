@@ -1,7 +1,7 @@
 # Photosynthetic pigments of co-occurring Northeast Atlantic *Laminaria* spp. are unaffected by decomposition
 This repository contains data and R code accompanying article 10.3354/meps13886 in *Marine Ecology Progress Series*.
 
-The repository is split into two folders: **Analysis** and **Deconvolution**. The former contains all files to perform the statitsical analysis. The latter contains all files to perform the spectral deconvolution adapted from article 10.1371/journal.pone.0137645 in *Public Library of Science One*. Below is a description of each file within those folders.
+The repository is split into two folders: **Analysis** and **Deconvolution**. The former contains all files to perform the statistical analysis. The latter contains all files to perform the spectral deconvolution adapted from article 10.1371/journal.pone.0137645 in *Public Library of Science One*. Below is a description of each file within those folders.
 
 **Analysis**
 1. `Environmental.csv`|`Environmental.R`: *In situ* light and temperature data.
