@@ -18,7 +18,7 @@ The repository is split into two folders: **Analysis** and **Deconvolution**. Th
     - *pigment* = Chlorophll *a*, Chlorophyll *c* or Carotenoids
     - *wet* = fresh extract pigment concentration
     - *dry* = lyophilised extract pigment concentration
-4. `Pigments.csv`|`Pigments.R`: Main pigment data. All pigment concentrations are given in micrograms per gram.
+4. `Pigments.csv`|`Pigments.R`: Main pigment data. All pigment concentrations are given in micrograms per gram of dry mass.
     - *id* = sample ID
     - *site* = Mount Batten (MB) or West Hoe (WH)
     - *species* = *Laminaria digitata* (d), *Laminaria hyperborea* (h) or *Laminaria ochroleuca* (o)
